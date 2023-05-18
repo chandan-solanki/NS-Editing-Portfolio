@@ -1,0 +1,331 @@
+:root {
+    --black: #080808;
+    --lightblack: #262626;
+    --white: #fff;
+    --primary: #f00408;
+    --blurblack: #ffffffa8;
+
+}
+
+
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        padding: 10px 5%;
+    }
+
+    #back-video {
+
+        display: none;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+
+    #logo-head img {
+        width: 164px;
+
+    }
+
+    nav {
+
+        z-index: 5;
+        padding: 5px;
+    }
+
+
+
+    #header {
+        background: url('/images/phone3.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #back-video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    nav ul {
+
+        display: block;
+        position: fixed;
+        top: 0px;
+        right: -200px;
+        background-color: var(--primary);
+        width: 200px;
+        height: 115vh;
+        z-index: 4;
+        padding-top: 20px;
+        transition: right 0.3s;
+    }
+
+    nav ul .fa-solid {
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 25px;
+        padding: 0px;
+    }
+
+
+    #about{
+        margin-top: -140px;
+    }
+    nav {
+        flex-wrap: wrap;
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+
+    .services-list {
+        flex-wrap: wrap;
+    }
+
+    .header-text {
+        margin-top: 506px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .work-list {
+        flex-direction: column;
+    }
+
+    .copyright p {
+        font-size: 13px;
+    }
+
+    /* portfolio */
+    .portfolio-header-text {
+        margin-top: 10px;
+    }
+
+    .project-col iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio-header-text h1 {
+        font-size: 44px;
+    }
+
+    .project-link {
+        font-size: 15px;
+    }
+
+    .project-title {
+        gap: 20px;
+    }
+
+    .project-row {
+        flex-direction: column;
+        gap: 30px;
+        overflow: hidden;
+    }
+
+    .project-col {
+        width: 100%;
+        height: 281.25px;
+        border: 2px solid rgb(74, 74, 74);
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .project-list {
+        padding: 10px;
+    }
+
+    .project-list h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    video {
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    #instagram .project-col {
+        width: 312px;
+        height: 553px;
+    }
+
+    #graphic .project-col {
+        width: auto;
+        border: none;
+        border-radius: 2px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(74, 74, 74);
+        border-radius: 15px;
+    }
+
+
+    /* swipper */
+    .swiper {
+        width: 100%;
+        height: auto;
+    }
+
+    project-list {
+        gap: 25px;
+    }
+
+    .logo {
+        overflow: hidden;
+    }
+
+    .mySwiper2 {
+        height: 68px;
+    }
+
+    #next {
+        color: red;
+        display: none;
+    }
+
+    #prev {
+        color: red;
+        display: none;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 380px) {
+
+    .header-text {
+        margin-top: 403px;
+    }
+
+    .header-text p {
+        font-size: 15px;
+    }
+
+    .header-text h1 {
+        font-size: 23px;
+    }
+
+    .about-title p {
+        font-size: 13px;
+    }
+
+    .copyright p {
+        font-size: 14px;
+    }
+
+    /* portfolio */
+
+    .project-col iframe {
+        width: auto;
+        height: auto;
+    }
+
+    .portfolio-header-text {
+        margin-top: 10px;
+    }
+
+    .portfolio-header-text h1 {
+        font-size: 33px;
+    }
+
+    .project-link {
+        font-size: 14px;
+    }
+
+    .project-title {
+        gap: 20px;
+    }
+
+    .project-row {
+        flex-direction: column;
+        gap: 30px;
+        overflow: hidden;
+    }
+
+    .project-col {
+        width: 100%;
+        height: 281.25px;
+        border: 2px solid rgb(74, 74, 74);
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .project-list {
+        padding: 10px;
+    }
+
+    .project-list h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #graphic .project-col {
+        width: auto;
+        border: none;
+        border-radius: 2px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(74, 74, 74);
+        border-radius: 15px;
+    }
+
+    /* swipper */
+
+    .swiper {
+        width: 100%;
+        height: auto;
+    }
+
+    project-list {
+        gap: 25px;
+    }
+
+    .logo {
+        overflow: hidden;
+    }
+
+    .mySwiper2 {
+        height: 68px;
+    }
+
+}

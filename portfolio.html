@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/utilities.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="icon" href="/images/fevicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/da348fb057.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- PORTFOLIO HEADER SECTION -->
+    <div id="portfolio-header">
+
+        <div class="container">
+            <nav>
+                <a href="/index.html">
+                    <div id="logo-head">
+                        <img src="/images/Sign Logo2.png" alt="logo">
+                    </div>
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#services">Services</a></li>
+                    <li><a href="/index.html#portfolio">Portfolio</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text portfolio-header-text">
+                <!-- <p>Video Editor / Graphic Designer</p> -->
+                <h1>My <span>Portfolio</span><br></h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PORTFOLIO PROJECT SECTION -->
+    <div id="project">
+        <div class="container">
+            <div class="project-title">
+                <p class="tab-links active-link project-link" id="yt" onclick="opentab('ytvideo')"> <span>YT
+                        Videos</span> </p>
+                <p class="tab-links project-link" id="insta" onclick="opentab('instagram')">Instagram Reels</p>
+                <p class="tab-links project-link" id="grap" onclick="opentab('graphic')">Graphic Work</p>
+            </div>
+            <!-- ------ yt video ----- -->
+            <div class="project-list active-tab" id="ytvideo">
+                <h1>YT VIDEO</h1>
+
+                <div class="project-row-1 project-row">
+                    <div class="project-col-1 project-col">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5bxAML7gIFA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="project-col-2 project-col">
+
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9EkwWsThO94"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="project-col-3 project-col">
+
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jSlHGHTOHK4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="project-row-2 project-row">
+                    <div class="project-col-1 project-col">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5t3iLR7hw5s"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+                    <div class="project-col-2 project-col">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yrlINf9lNC4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </div>
+                    <div class="project-col-3 project-col">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/knLDVugp0kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------ instagram video ----------- -->
+            <div class="project-list " id="instagram">
+                <h1>INSTAGRAM RELLS & VIDEO</h1>
+
+                <div class="project-row-1 project-row">
+                    <div class="project-col-1 project-col">
+                        <video controls src="/video/Reels- IGTV Video/video1.mp4"></video>
+                    </div>
+                    <div class="project-col-2 project-col">
+                        <video controls src="/video/Reels- IGTV Video/video2.mp4"></video>
+                    </div>
+                    <div class="project-col-3 project-col">
+                        <video controls src="/video/Reels- IGTV Video/video3.mp4"></video>
+                    </div>
+                </div>
+
+                <div class="project-row-2 project-row">
+                    <div class="project-col-1 project-col">
+                        <video controls src="/video/Reels- IGTV Video/video4.mp4"></video>
+                    </div>
+                    <div class="project-col-2 project-col">
+                        <video controls src="/video/Reels- IGTV Video/video7.mp4"></video>
+                    </div>
+                    <div class="project-col-3 project-col">
+                        <video controls src="/video/Reels- IGTV Video/video6.mp4"></video>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ----------- Graphic Designing ---------- -->
+            <div class="project-list " id="graphic">
+                <h1>GRAPHIC DESINGNING</h1>
+
+                <!-- ROW - 1 -->
+                <div class="project-row-1 project-row active-tab">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p1.png" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p2.png" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p3.png" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p4.png" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p5.png" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p6.png" alt="g1-img">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div id="next" class="swiper-button-next"></div>
+                        <div id="prev" class="swiper-button-prev"></div>
+
+                    </div>
+                </div>
+
+
+                <!-- ROW - 1
+                <div class="project-row-1 project-row active-tab">
+                    <div class="project-col-1 project-col">
+                        <img src="/video/Graphic Work/p1.png" alt="g1-img">
+                    </div>
+                    <div class="project-col-2 project-col">
+                        <img src="/video/Graphic Work/p2.png" alt="g1-img">
+
+                    </div>
+                    <div class="project-col-3 project-col">
+                        <img src="/video/Graphic Work/p3.png" alt="g1-img">
+                    </div>
+                </div> -->
+
+
+
+
+                <!-- ROW - 2
+                <div class="project-row-2 project-row">
+                    <div class="project-col-1 project-col">
+                        <img src="/video/Graphic Work/p4.png" alt="g1-img">
+                    </div>
+                    <div class="project-col-2 project-col">
+                        <img src="/video/Graphic Work/p5.png" alt="g1-img">
+                    </div>
+                    <div class="project-col-3 project-col">
+                        <img src="/video/Graphic Work/p6.png" alt="g1-img">
+
+                    </div>
+                </div> -->
+
+
+                <!-- BANNER IMAGE -->
+                <!-- ROW - 3      -->
+                <div class="project-row-3 project-row banner">
+                    <p>
+                        ━━━━━━━━━━━━━━━━━━━━━━━━━ <span class="heading-project">YOUTUBE BANNER</span>
+                        ━━━━━━━━━━━━━━━━━━━━━━━━━
+                    </p>
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p7.png" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p7.png" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p7.png" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p7.png" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p7.png" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/p7.png" alt="g1-img">
+                            </div>
+                        </div>
+                        <div id="next" class="swiper-button-next"></div>
+                        <div id="prev" class="swiper-button-prev"></div>
+                        <div class="swiper-pagination " id="swiper2-pagination"></div>
+                    </div>
+                </div>
+
+                <!-- BANNER IMAGE -->
+                <!-- ROW - 3      -->
+                <!-- <div class="project-row-3 project-row banner">
+                    <p>
+                        ━━━━━━━━━━━━━━━━━━━━━━━━━ <span>YOUTUBE BANNER</span> ━━━━━━━━━━━━━━━━━━━━━━━━━
+                    </p>
+                    <div class="project-col-1 project-col">
+                        <img src="/video/Graphic Work/p7.png" alt="g1-img">
+                    </div>
+                    <div class="project-col-1 project-col">
+                        <img src="/video/Graphic Work/p7.png" alt="g1-img">
+                    </div>
+                    <div class="project-col-1 project-col">
+                        <img src="/video/Graphic Work/p7.png" alt="g1-img">
+                    </div>
+                </div> -->
+
+                <!-- LOGO IMAGE -->
+                <!-- ROW - 4    -->
+                <div class="logo flex">
+                    <p>
+                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class="heading-project">LOGOS</span>
+                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                    </p>
+                    <div class="project-row-4 project-row">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="/video/Graphic Work/p1.png" alt="g1-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/video/Graphic Work/p2.png" alt="g1-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/video/Graphic Work/p3.png" alt="g1-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/video/Graphic Work/p4.png" alt="g1-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/video/Graphic Work/p5.png" alt="g1-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/video/Graphic Work/p6.png" alt="g1-img">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div id="next" class="swiper-button-next"></div>
+                            <div id="prev" class="swiper-button-prev"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- LOGO IMAGE -->
+                <!-- ROW - 4    -->
+                <!-- <div class="logo flex">
+                    <p>
+                        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span>LOGOS</span> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                    </p>
+                    <div class="project-row-4 project-row">
+                        <div class="project-col-1 project-col">
+                            <img src="/video/Graphic Work/p4.png" alt="g1-img">
+                        </div>
+                        <div class="project-col-2 project-col">
+                            <img src="/video/Graphic Work/p5.png" alt="g1-img">
+                        </div>
+                        <div class="project-col-3 project-col">
+                            <img src="/video/Graphic Work/p6.png" alt="g1-img">
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <!-- TEMPLATE IMAGE -->
+                <!-- ROW - 5 -->
+                <div class="project-row-5 project-row template">
+                    <p>
+                        ━━━━━━━━━━━━━━━━━━━━━━━━━ <span class="heading-project"> UX/UI DESIGN </span>
+                        ━━━━━━━━━━━━━━━━━━━━━━━━━
+                    </p>
+                    <div class="swiper mySwiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/P9.jpg" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/P9.jpg" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/P9.jpg" alt="g1-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/video/Graphic Work/P9.jpg" alt="g1-img">
+                            </div>
+                        </div>
+                        <div id="next" class="swiper-button-next"></div>
+                        <div id="prev" class="swiper-button-prev"></div>
+                        <div class="swiper-pagination "></div>
+                    </div>
+                </div>
+                <!-- TEMPLATE IMAGE -->
+                <!-- ROW - 5 -->
+                <!-- <div class="project-row-5 project-row template">
+                    <p>
+                        ━━━━━━━━━━━━━━━━━━━━━━━━━ <span> UX/UI DESIGN </span> ━━━━━━━━━━━━━━━━━━━━━━━━━
+                    </p>
+                    <div class="project-col-1 project-col">
+                        <img src="/video/Graphic Work/P9.jpg" alt="g1-img">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO COPYRIGHT SECTION -->
+
+    <div class="portfolio-copy copyright">
+        <p>Copyright © nseditingservice <i class="fa-solid fa-heart"></i> 2022
+        </p>
+    </div>
+    <script src="/js/mobile.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
+
+</body>
+
+</html>
