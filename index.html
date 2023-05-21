@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/utilities.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/ipad.css">
     <link rel="icon" href="/images/fevicon.png" type="image/png">
     <title>NS Editing Service</title>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/da348fb057.js" crossorigin="anonymous"></script>
 </head>
 
@@ -39,8 +41,10 @@
             </nav>
 
             <div class="header-text">
-                <p>Video Editor / Graphic Designer</p>
-                <h1>Hi , I'm <span>Nainesh</span><br> From India</h1>
+                <span id="element"></span>
+                <!-- <p>Video Editor / Graphic Designer</p> -->
+                <h1>Hi , I'm <span class="red">Nainesh</span><br> From India</h1>
+                <!-- Element to contain animated typing -->
             </div>
         </div>
     </div>
@@ -107,22 +111,22 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Designing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus obcaecati, praesentium fuga sunt
-                        deleniti, beatae, culpa tenetur.</p>
+                    <p>Web Design is the process of creating, making, and developing websites. It includes many
+                        different features such as webpage layout, webpage content, and also graphic designs. In general
+                        web design and web development work together, but the term web design is an actual category of
+                        web development.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Designing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus obcaecati, praesentium fuga sunt
-                        deleniti, beatae, culpa tenetur.</p>
+                    <p>The design of a site or an app can never be the same or static. Every site or app is unique, and so is the process and technique involved in developing it. But when it comes to the tools used for UI and UX app design and executing developmental projects, you can see just a handful them that can deliver efficiently.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>App Designing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus obcaecati, praesentium fuga sunt
-                        deleniti, beatae, culpa tenetur.</p>
+                    <p>In a world of digitalization, technology is improving day by day. Mobile phones are an amazing part of this blooming technology and an important part of human life. Rising use of mobile devices is the root cause behind many new technologies being introduced to the world new technologies .</p>
                     <a href="#">Learn More</a>
                 </div>
             </div>
@@ -211,5 +215,13 @@
     </div>
     <script src="/js/desktop.js"></script>
 </body>
+
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Graphic Designer', 'App Designing', 'UI/UX Designing', 'Web Designing', 'Video Editor '],
+        typeSpeed: 60,
+    });
+</script>
 
 </html>

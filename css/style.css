@@ -47,7 +47,7 @@ body {
 
 }
 
-#back-video{
+#back-video {
     overflow: hidden;
     /* z-index: 1; */
     position: absolute;
@@ -66,7 +66,7 @@ body {
     width: 164px;
 }
 
-#logo-a{
+#logo-a {
     position: relative;
 }
 
@@ -140,7 +140,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 40%;
+    margin-top: 39%;
     position: relative;
     z-index: 4;
 }
@@ -154,17 +154,28 @@ nav ul li a:hover::after {
     font-size: 56px;
 }
 
-.header-text span {
+.red{
+    font-size: 56px;
     color: var(--primary);
 }
 
-
+.typed-cursor {
+    opacity: 1;
+    font-size: 2rem;
+}
+#element{
+    font-size: 2rem;
+    margin: 13px 0px;
+    color: var(--white);
+    /* font-weight: 600; */
+}
 
 /* ------About------- */
 
-#about{
+#about {
     margin-top: 150px;
 }
+
 .row {
     margin-top: 75px;
     justify-content: space-between;
@@ -768,7 +779,7 @@ textarea {
     margin-top: 20px;
 }
 
-video{
+video {
     width: 100%;
 }
 

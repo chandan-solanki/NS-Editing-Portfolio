@@ -1,0 +1,166 @@
+@media screen and (min-width : 601px) and (max-width : 900px) {
+    body {
+        /* background: red; */
+    }
+
+    #header {
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .container {
+        height: 100%;
+        padding: 10px 2%;
+    }
+
+    nav ul li {
+        margin: 1px 14px;
+        list-style: none;
+        padding: 0;
+    }
+
+    #about {
+        margin-top: 0;
+    }
+
+    .header-text h1 {
+        font-size: 4rem;
+    }
+
+    #element {
+        font-size: 3rem;
+    }
+
+    .red {
+        font-size: 4rem;
+    }
+
+    .header-text {
+        margin: 0;
+        position: absolute;
+        bottom: 10%;
+    }
+
+    #back-video {
+        width: 250vw;
+        height: 100vh;
+        border: 2px solid red;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    #logo-head img {
+        width: 15vw;
+    }
+
+    .about-title h2 {
+        color: var(--white);
+        font-size: 3rem;
+        padding: 0;
+    }
+
+    .about-title p {
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .tab-title {
+        display: flex;
+        gap: 50px;
+        margin: 12px 0;
+    }
+
+    .tab-links {
+        font-size: 1.1rem;
+    }
+
+    .services-list div {
+        padding: 0;
+        font-weight: 300;
+        font-size: 1.1rem;
+        min-height: 100%;
+        max-width: 30vw;
+        position: relative;
+
+    }
+
+    .services-list div a::after {
+        /* content: ''; */
+        display: none;
+        width: 0;
+        background: var(--white);
+        left: 0px;
+        bottom: -10px;
+        position: relative;
+        height: 3px;
+        transition: width 0.5s;
+    }
+
+    .services-list div a:hover::after {
+        width: 0%;
+    }
+
+    .services-list {
+        margin-top: 30px;
+        display: flex;
+        gap: 21px;
+        min-height: 48vh;
+    }
+
+    .services-list div i {
+        text-align: center;
+        padding: 10px;
+    }
+
+
+    .services-list div h2 {
+        text-align: center;
+    }
+
+    .services-list div p {
+        text-align: center;
+        line-height: normal;
+        padding: 0px 14px;
+    }
+
+    .services-list div a {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        position: absolute;
+        ;
+        top: 89%;
+    }
+
+    .work-list {
+        gap: 26px;
+    }
+
+    .layer a {
+        font-size: 21px;
+        width: 45px;
+        height: 45px
+    }
+
+    .contact-col-1 {
+        flex-basis: 43%;
+    }
+
+    .banner p {
+
+        width: 63%;
+
+    }
+
+    .logo p {
+        width: 70%;
+    }
+
+    .template p {
+        width: 60%;
+    }
+}
