@@ -504,6 +504,12 @@ nav ul li a:hover::after {
 
 }
 
+.whatsapp a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--blurblack);
+}
+
 .social-icon a i:hover {
     color: var(--primary);
     transform: translateY(-10px);
@@ -563,6 +569,7 @@ textarea {
 .portfolio-header-text h1 {
     display: inline-block;
     margin: 75px auto;
+    font-size: 2.5rem;
 }
 
 

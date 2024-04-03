@@ -6,6 +6,8 @@ var sidemenu = document.getElementById("sidemenu");
 function openmenu() {
     sidemenu.style.right = "0px";
 }
+
+
 function closemenu() {
     sidemenu.style.right = "-200px";
     console.log("click event");
@@ -14,7 +16,7 @@ function closemenu() {
 
 
 
-// <!-- SCRIPT FOR TABLINKS OR TABCONTENTS -->
+// <!-- SCRIPT FOR TABLINKS AND TABCONTENTS -->
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
