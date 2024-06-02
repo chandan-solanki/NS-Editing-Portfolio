@@ -21,6 +21,7 @@
     --white: #fff;
     --primary: #6f00a5 ;
     --blurblack: #ffffffa8;
+    --borderColor: #b901d5; 
 
 }
 
@@ -250,7 +251,7 @@ nav ul li a:hover::after {
     overflow: hidden;
     justify-content: center;
     border-radius: 50%;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--borderColor);
 }
 
 .creator-name {
@@ -558,7 +559,7 @@ nav ul li a:hover::after {
 
 .btn {
     text-decoration: none;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--borderColor);
     color: white;
     display: block;
     width: fit-content;
