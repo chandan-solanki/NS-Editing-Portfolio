@@ -19,7 +19,7 @@
     --black: #080808;
     --lightblack: #262626;
     --white: #fff;
-    --primary: #f00408;
+    --primary: #6f00a5 ;
     --blurblack: #ffffffa8;
 
 }
@@ -250,7 +250,7 @@ nav ul li a:hover::after {
     overflow: hidden;
     justify-content: center;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 2px solid var(--primary);
 }
 
 .creator-name {
