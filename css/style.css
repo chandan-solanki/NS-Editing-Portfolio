@@ -19,9 +19,9 @@
     --black: #080808;
     --lightblack: #262626;
     --white: #fff;
-    --primary: #6f00a5 ;
+    --primary: #6f00a5;
     --blurblack: #ffffffa8;
-    --borderColor: #b901d5; 
+    --borderColor: #b901d5;
 
 }
 
@@ -181,7 +181,9 @@ nav ul li a:hover::after {
 
 .red {
     font-size: 56px;
-    color: var(--primary);
+    background: -webkit-linear-gradient(#b901d5, #6f00a5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .typed-cursor {
@@ -666,7 +668,7 @@ textarea {
 .submit {
     display: inline-block;
     margin: 0px 0px;
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
     padding: 15px 55px;
     font-size: 20px;
     cursor: pointer;
@@ -943,17 +945,17 @@ video {
     width: 100%;
 }
 
-#cv_btn{
+#cv_btn {
     display: none;
 }
 
-.footer-logo{
+.footer-logo {
     width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer-logo>img{
+.footer-logo>img {
     width: 20px;
 }
