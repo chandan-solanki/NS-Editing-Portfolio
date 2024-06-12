@@ -1,74 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/utilities.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="stylesheet" href="/css/ipad.css">
-    <link rel="icon" href="/images/NS Editing Service Logo.png" type="image/png">
+    <link
+      rel="icon"
+      href="/images/NS Editing Service Logo.png"
+      type="image/png"
+    />
     <title>NS Editing Service</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://kit.fontawesome.com/da348fb057.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/da348fb057.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
+  <body>
     <!-- --------------HEADER SECTION--------------- -->
 
     <div id="header">
-        <video id="back-video" autoplay muted loop src="/video/background-2.mp4"></video>
-        <div class="container">
-            <nav>
-                <a id="logo-a" href="/index.html">
-                    <div id="logo-head">
-                        <img src="/images/Sign Logo2.png" alt="logo">
-                    </div>
-                </a>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#creator">Creator</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="/portfolio.html">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-
-            <div class="header-text">
-                <span id="element"></span>
-                <!-- <p>Video Editor / Graphic Designer</p> -->
-                <h1>Hi , I'm <span class="red">Nainesh</span><br> From India</h1>
-                <!-- Element to contain animated typing -->
+      <video
+        id="back-video"
+        autoplay
+        muted
+        loop
+        src="/video/background-2.mp4"
+      ></video>
+      <div class="container">
+        <nav>
+          <a id="logo-a" href="/index.html">
+            <div id="logo-head">
+              <img src="/images/Sign Logo2.png" alt="logo" />
             </div>
-        </div>
+          </a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#creator">Creator</a></li>
+            <li><a href="#contact">Services</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i id="openUlBtn" class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
 
-        <div class="profile-header-img">
-            <img src="/images/Nainesh Circle Logo 1.png" alt="header png">
+        <div class="header-text">
+          <div>
+            <span id="element"></span>
+            <h1>
+              Hi , I'm <span class="red">Nainesh</span><br />
+              From India
+            </h1>
+          </div>
+
+          <div class="profile-header-img">
+            <img src="/images/Nainesh Circle Logo 1.png" alt="header png" />
+          </div>
         </div>
+      </div>
     </div>
-
 
     <!-- ---------------- creators section ---------------  -->
 
     <div id="creator">
-        <!-- Edit this and the preview will update automatically. -->
+      <!-- Edit this and the preview will update automatically. -->
 
-        <div class="container">
+      <div class="container">
+        <div class="header-creator">
+          <h1 class="sub-title">Creators/Brands</h1>
+          <h3>I've worked with</h3>
+        </div>
 
-            <div class="header-creator">
-                <h1 class="sub-title">Creators/Brands</h1>
-                <h3>I've worked with</h3>
-            </div>
-
-            <div class="main-creator-conatanier">
-
-                <!-- <div class="cards">
+        <div class="main-creator-conatanier">
+          <!-- <div class="cards">
                     <div class="creator-img">
                         <img src="images/fevicon.png" alt="creator img">
                     </div>
@@ -77,197 +87,200 @@
                 </div>
               -->
 
-                <!-- <div class="manyMore">
+          <!-- <div class="manyMore">
                     <p>and many more......</p>
                 </div> -->
-
-            </div>
         </div>
+      </div>
     </div>
-
-
-    <!-- ------------------ About Section --------------- -->
-    <!-- <div id="about">
-        <div class="container">
-            <div class="row flex">
-                <div class="about-col-1">
-                    <img src="/images/user1.png" alt="user png">
-                </div>
-                <div class="about-col-2">
-                    <div class="about-title">
-                        <h2>About Me</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores amet velit laborum
-                            dignissimos magni. Culpa cumque quis tempora nisi nulla error aliquid ipsum temporibus neque
-                            officiis saepe, facere eum corporis. Maiores atque ut temporibus? Lorem ipsum, dolor sit
-                            amet consectetur adipisicing elit. Voluptate, adipisci. Cumque obcaecati, error quidem
-                            debitis perferendis odit voluptates</p>
-                    </div>
-
-                    <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Video Editing</span><br>Premiere Pro & After Effects</li>
-                            <li><span>Graphic Designing</span><br>Photoshop | Illustrator | Adobe XD</li> -->
-    <!-- <li><span>App Development</span><br>Building Android/Ios apps</li> -->
-    <!-- </ul>
-                    </div> -->
-
-    <!-- <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2021 - Current</span><br> UI/UX Training at ET Institute</li>
-                            <li><span>2019 - 2021</span><br>Team lead at Starp LLC.</li>
-                            <li><span>2017 - 2019 </span><br>UI/UX Executive at Coin Digital Ltd.</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2016 </span><br>UI/UX Executive at Coin Digital Ltd</li>
-                            <li><span>2016</span><br>MBA from MIT Banglore.</li>
-                            <li><span>2014</span><br>BBA from MIT Banglore.</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div> -->
-
 
     <!-- --------------- Services Section --------------- -->
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Designing</h2>
-                    <p>Web Design is the process of creating, making, and developing websites. It includes many
-                        different features such as webpage layout, webpage content, and also graphic designs. In general
-                        web design and web development work together, but the term web design is an actual category of
-                        web development.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Designing</h2>
-                    <p>The design of a site or an app can never be the same or static. Every site or app is unique, and
-                        so is the process and technique involved in developing it. But when it comes to the tools used
-                        for UI and UX app design and executing developmental projects, you can see just a handful them
-                        that can deliver efficiently.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Designing</h2>
-                    <p>In a world of digitalization, technology is improving day by day. Mobile phones are an amazing
-                        part of this blooming technology and an important part of human life. Rising use of mobile
-                        devices is the root cause behind many new technologies being introduced to the world new
-                        technologies .</p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Designing</h2>
+            <p>
+              Web Design is the process of creating, making, and developing
+              websites. It includes many different features such as webpage
+              layout, webpage content, and also graphic designs. In general web
+              design and web development work together, but the term web design
+              is an actual category of web development.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Designing</h2>
+            <p>
+              The design of a site or an app can never be the same or static.
+              Every site or app is unique, and so is the process and technique
+              involved in developing it. But when it comes to the tools used for
+              UI and UX app design and executing developmental projects, you can
+              see just a handful them that can deliver efficiently.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Designing</h2>
+            <p>
+              In a world of digitalization, technology is improving day by day.
+              Mobile phones are an amazing part of this blooming technology and
+              an important part of human life. Rising use of mobile devices is
+              the root cause behind many new technologies being introduced to
+              the world new technologies .
+            </p>
+            <a href="#">Learn More</a>
+          </div>
         </div>
-
+      </div>
     </div>
-
 
     <!-- ---------- Portfolio Section ----------- -->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Portfolio</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="/images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Youtube Videos</h3>
-                        <p>The app connect the around the world.Download in the play store</p>
-                        <a href="/portfolio.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="/images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>Instagram Reels</h3>
-                        <p>The app connect the around the world.Download in the play store</p>
-                        <a href="/portfolio.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="/images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Graphic Work</h3>
-                        <p>The app connect the around the world.Download in the play store</p>
-                        <a href="/portfolio.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Youtube Videos</h3>
+              <p>
+                The app connect the around the world.Download in the play store
+              </p>
+              <a href="/portfolio.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <a href="/portfolio.html" class="btn">See more</a>
+          </div>
+          <div class="work">
+            <img src="/images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Instagram Reels</h3>
+              <p>
+                The app connect the around the world.Download in the play store
+              </p>
+              <a href="/portfolio.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Graphic Work</h3>
+              <p>
+                The app connect the around the world.Download in the play store
+              </p>
+              <a href="/portfolio.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a href="/portfolio.html" class="btn">See more</a>
+      </div>
     </div>
-
 
     <!-- -------------- Contact Section ------------- -->
 
     <div id="contact">
+      <div class="container">
+        <div class="row flex">
+          <div class="contact-col-1">
+            <h1 class="sub-title">Contact Me</h1>
+            <p class="gmail">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=nseditingservice@gmail.com"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+                >nseditingservice@gmail.com</a
+              >
+            </p>
+            <p class="whatsapp">
+              <a href="https://wa.me/+919106409575" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>+91 91064 09575</a
+              >
+            </p>
 
-
-        <div class="container">
-            <div class="row flex">
-                <div class="contact-col-1">
-
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p class="gmail"> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nseditingservice@gmail.com"
-                            target="_blank"><i class="fa-solid fa-envelope"></i>nseditingservice@gmail.com</a> </p>
-                    <p class="whatsapp"><a href="https://wa.me/+919106409575" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i>+91 91064 09575</a></p>
-
-                    <div class="social-icon">
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/nseditingservice/#"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/ns-nainesh-b68979139/" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a id="cv_btn" href="/images/cv.pdf" target="_blank" class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-col-2">
-                    <form name="submit-to-google-sheet" action="#">
-                        <input type="text" name="Name" id="name" placeholder="Your Name" required>
-                        <input type="email" name="Email" id="email" placeholder="Your Email" required>
-                        <textarea name="Message" id="message" rows="10" placeholder="Your Message"></textarea>
-                        <input class="btn submit" type="submit" value="Submit">
-                    </form>
-
-                    <span id="msg"> </span>
-                </div>
+            <div class="social-icon">
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/nseditingservice/#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a
+                href="https://www.linkedin.com/in/ns-nainesh-b68979139/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
-        </div>
-    </div>
+            <a
+              id="cv_btn"
+              href="/images/cv.pdf"
+              target="_blank"
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-col-2">
+            <form name="submit-to-google-sheet" action="#">
+              <input
+                type="text"
+                name="Name"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id="message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <input class="btn submit" type="submit" value="Submit" />
+            </form>
 
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- -----------------  Copyright Section ------------ -->
     <div class="copyright">
-
-        <p class="copyright-date">Copyright © nseditingservice <span class="footer-logo"><img
-                    src="/images/NS Editing Service Logo.png" alt="ns_log"></span> 2022
-        </p>
+      <p class="copyright-date">
+        Copyright © nseditingservice
+        <span class="footer-logo"
+          ><img src="/images/NS Editing Service Logo.png" alt="ns_log"
+        /></span>
+        2022
+      </p>
     </div>
-    <script src="/js/desktop.js"></script>
-</body>
+    <script type="module" src="/js/desktop.js"></script>
+    <script  src="/js/mobile.js"></script>
 
-<!-- Setup and start animation! -->
-<script>
-    var typed = new Typed('#element', {
-        strings: ['Video Editor '],
-        typeSpeed: 60,
+  </body>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Video Editor "],
+      typeSpeed: 60,
     });
-</script>
-
+  </script>
 </html>

@@ -11,8 +11,8 @@
 }
 
 ::selection {
-    background: rgb(255, 255, 255);
-    color: red;
+    /* background: rgb(255, 255, 255); */
+    /* color: red; */
 }
 
 :root {
@@ -25,6 +25,8 @@
 
 }
 
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,6 +34,9 @@ html {
 body {
     background-color: #080808;
     color: #ffff;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 body {
@@ -58,14 +63,8 @@ body {
 
 
 .profile-header-img {
-    z-index: +100;
-    border-radius: 50%;
     overflow: hidden;
-    width: 350px;
-    top: 30%;
-    right: 8%;
-    height: 350px;
-    position: absolute;
+    max-width: 300px;
 }
 
 .profile-header-img>img {
@@ -101,18 +100,7 @@ nav {
     align-items: center;
 }
 
-/* nav{
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(2, 2, 2,.71);
-    position: fixed;
-    top: 0;
-    left: 0px;
-    width: 100%;
-    z-index: 5;
-} */
 
 nav ul {
     display: flex;
@@ -165,9 +153,12 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 39%;
+    margin-top: 28%;
     position: relative;
     z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-text p {
@@ -235,6 +226,7 @@ nav ul li a:hover::after {
     align-items: center;
     gap: .4rem;
     justify-content: center;
+    text-align: center;
 }
 
 .creator-img>img {
@@ -268,7 +260,7 @@ nav ul li a:hover::after {
     color: white;
     font-size: 2rem;
     letter-spacing: 1px;
-    grid-column-start: 4;
+    grid-column-start: 5;
     grid-column-end: 6;
     text-align: center;
     display: flex;
@@ -661,6 +653,7 @@ textarea {
     /* margin: 7px 0px; */
     background-color: var(--lightblack);
     color: var(--white);
+    resize: none;
 }
 
 
@@ -916,8 +909,6 @@ video {
 
 
 
-
-
 /* swiper  */
 
 
@@ -929,16 +920,16 @@ video {
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
     cursor: pointer;
-    background: red;
+    background: var(--primary);
 
 }
 
 #next {
-    color: red;
+    color: var(--primary);
 }
 
 #prev {
-    color: red;
+    color: var(--primary);
 }
 
 .swiper {
