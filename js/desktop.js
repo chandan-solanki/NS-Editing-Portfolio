@@ -3,7 +3,7 @@ import ytdata from "./ytdata.js";
 // ----------- SET COPY RIGHT DATE SECTION ------------
 const copyright_date = document.querySelector(".copyright-date");
 
-document.addEventListener("load", () => {
+window.addEventListener("load", () => {
   setCopyRightDate();
   console.log("width : ", window.innerWidth);
 });
@@ -11,7 +11,7 @@ document.addEventListener("load", () => {
 function setCopyRightDate() {
   let date = new Date();
   date = date.getFullYear();
-  copyright_date.innerHTML = `<p class="copyright-date">Copyright © nseditingservice <span class="footer-logo"><img src="/images/NS Editing Service Logo.png" alt="ns_log"></span> ${date}</p>`;
+  copyright_date.innerHTML = `<p class="copyright-date">Copyright © nseditingservice <span class="footer-logo"><img src="/images/NS Editing Service Logo Violet.png" alt="ns_log"></span> ${date}</p>`;
 }
 
 // <!-- SCRIPT FOR SIDEMENU BAR FOR RESPONSIVE DESIGN -->

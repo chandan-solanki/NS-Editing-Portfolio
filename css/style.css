@@ -25,6 +25,98 @@
 
 }
 
+#header,
+#creator,
+#services,
+#portfolio,
+#contact {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+
+.purple-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 2.4rem;
+}
+
+.purple-logo>img {
+    max-width: 100%;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    height: 70vh;
+
+}
+
+.contactMe h2{
+    font-weight: 400;
+}
+
+.contactMe a {
+    cursor: pointer;    
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.video-img {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    min-width: 50%;
+    opacity: .1;
+    overflow: hidden;
+}
+
+.video-img>img {
+    width: 100%;
+}
+
+.bg-video {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: +1;
+    max-width: 250px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.bg-video video {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.contactMe {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail-icon {
+    color: var(--primary);
+}
 
 
 html {
@@ -32,11 +124,16 @@ html {
 }
 
 body {
+    overflow: hidden;
     background-color: #080808;
     color: #ffff;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+
+    /* Standard syntax */
 }
 
 body {
@@ -45,6 +142,7 @@ body {
     background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KPGZpbHRlciBpZD0ibiI+CjxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIuNyIgbnVtT2N0YXZlcz0iMTAiIHN0aXRjaFRpbGVzPSJzdGl0Y2giPjwvZmVUdXJidWxlbmNlPgo8L2ZpbHRlcj4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzAwMCI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9Ii4yIj4KPC9yZWN0Pjwvc3ZnPg==");
     background-repeat: no-repeat;
     height: 100%;
+    min-height: 100vh;
     /* Ensure the background covers the entire viewport */
 }
 
@@ -461,6 +559,9 @@ nav ul li a:hover::after {
 
 .copyright {
     margin-top: 30px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
     padding: 25px;
     background: var(--lightblack);
 }

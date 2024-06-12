@@ -61,6 +61,12 @@ nav .fa-solid {
 
 }
 
+@media only screen and (max-width: 400px) {
+    .video-container {
+        height: 63vh;
+    }
+
+}
 
 @media only screen and (max-width: 380px) {
     .container {
